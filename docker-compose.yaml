@@ -6,6 +6,8 @@ services:
     build: ./users-api
     environment:
       AUTH_ADDRESS: auth
+      # if we want sync with k8s service naming convention and it to be suppoerted by docker-compose
+      AUTH_SERVICE_SERVICE_HOST: auth   
     ports: 
       - "8080:8080"
   tasks:
