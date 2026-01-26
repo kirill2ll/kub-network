@@ -17,3 +17,6 @@ spec:
       containers:
       - name: users
         image: kvitkovski/kub-network-users:latest
+        env:
+        - name: AUTH_ADDRESS
+          value: "auth-service.default"
